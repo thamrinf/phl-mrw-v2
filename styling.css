@@ -292,7 +292,7 @@ h5{
 .blockimage{
     position: absolute;
     z-index: 500;
-    top: 5vh;
+    top: 2vh;
     left:4rem;
 }
 .blockimage img{
@@ -303,14 +303,14 @@ h5{
     pointer-events: none !important;
 }
 .maptext > table{
-    width: 100%;
+    width: 75%;
     margin-bottom: 3px;
 }
 .maptext{
     width: 23%;
     position: absolute;
     z-index: 500;
-    top: 40vh;
+    top: 43vh;
     left: 4rem;
 }
 .maptext td{

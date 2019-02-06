@@ -11,7 +11,7 @@ var play=0,
 var widthOfScreen = $('body').width();
     console.log(widthOfScreen);
     var zoommap = 6.9;
-    if(widthOfScreen < 1500){
+    if(widthOfScreen < 1400){
       zoommap = 6.8;
     }else{
       zoommap = 6.9;
@@ -271,12 +271,12 @@ d3.csv('https://docs.google.com/spreadsheets/d/e/2PACX-1vQ1eT3GZFFQBgaT_I_BtLxWi
   var tilesPerRow = 12;
   var barPadding = 75;
   var tileSize = 0;
-  var labelFontSize = "9px";
+  var labelFontSize = "8.7px";
 
   if(widthOfScreen < 1300){
     barPadding = 50;
-    tileSize = 9;
-    labelFontSize = "11px";
+    tileSize = 7;
+    labelFontSize = "8px";
   }
   else if(widthOfScreen < 1500){
     barPadding = 50;
