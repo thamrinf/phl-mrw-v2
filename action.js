@@ -276,7 +276,7 @@ d3.csv('https://docs.google.com/spreadsheets/d/e/2PACX-1vQ1eT3GZFFQBgaT_I_BtLxWi
   if(widthOfScreen < 1300){
     barPadding = 50;
     tileSize = 7;
-    labelFontSize = "7px";
+    labelFontSize = "6px";
   }
   else if(widthOfScreen < 1500){
     barPadding = 50;
