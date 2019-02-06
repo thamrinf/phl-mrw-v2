@@ -1,0 +1,333 @@
+#loadingdata{
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,.9);
+    position: absolute;
+    z-index: 10000;
+    top: 0;
+    left: 0;
+}
+#loadingdata img{
+    width: 3vw;
+    left: 47vw;
+    top: 47vh;
+    position: absolute;
+}
+*:not(i){
+    font-family: 'Roboto', sans-serif !important;
+}
+
+#map{
+    width: 100vw;
+    height: 100vh;
+    background: white;
+    /*background: rgb(0,0,45);
+background: linear-gradient(180deg, rgba(0,0,45,1) 0%, rgba(0,0,45,1) 25%, rgba(0,0,0,1) 100%);
+
+background: rgb(0,28,196);
+background: radial-gradient(circle, rgba(0,28,196,1) 0%, rgba(0,28,196,1) 0%, rgba(0,0,0,1) 100%);
+
+background: rgb(1,26,53);
+background: radial-gradient(circle, rgba(1,26,53,1) 0%, rgba(9,10,19,1) 100%);
+
+background: rgb(10,38,76);
+background: radial-gradient(circle, rgba(10,38,76,1) 0%, rgba(9,10,19,1) 100%);*/
+
+}
+
+.forlogo{
+    position: absolute;
+    z-index: 500;
+    right: 0.5rem;
+    top: 0.5rem;
+    padding: 5px 10px;
+}
+.forlogo img{
+    height: 1.6rem;
+}
+.opomeneh{
+    pointer-events: none !important;
+}
+.total_mobility{
+    position: absolute;
+    z-index: 500;
+    top: 1rem;
+    width: 100%;
+}
+#thesvgtotalmobility{
+    width: 45vw;
+}
+#barcharttotalnum,#thesvgtotalmobility{
+    height: 85vh
+}
+.vis1legend > text, .vis2legend > text, .vis3legend > text{
+    font-size: 12px;
+    fill: #fff;
+}
+/*.rect1{
+    fill: orange;
+    stroke:red;
+}
+.rect2{
+    fill: orange;
+}
+.rect3{
+    fill: orange;
+}*/
+.leaflet-tile-pane{
+    z-index: 500 !important;
+}
+.labeltotal_mobility{
+    color: #00bcd4;
+    font-size: 0.8rem;
+    text-align: left;
+    padding-left: 1rem;
+}
+.titletotal_mobility{
+    color: #859da9;
+    font-size: 0.6rem;
+    font-weight: normal;
+    text-align: left;
+    margin-bottom: 0px;
+    width: 80%;
+}
+h5{
+    color: #859da9;
+}
+.blockleft{
+    width: 39vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    right: 1rem;
+    z-index: 450;
+    pointer-events: none;
+}
+.blockleft.active{
+    background: rgba(8, 22, 49, 0.90);
+   -webkit-box-shadow: 10px 0px 16px -4px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 0px 16px -4px rgba(0,0,0,0.75);
+    box-shadow: 10px 0px 16px -4px rgba(0,0,0,0.75);
+}
+.leftbar{
+    position: absolute;
+    z-index: 500;
+    bottom: 1rem;
+    left: 0rem;
+    width: 45vw;
+}
+#barchartdistance{
+    height: 35vh;
+}
+.leaflet-marker-icon{
+    margin-left: -4px !important;
+    margin-top: -15px !important;
+    width: 10px !important;
+    height: 15px !important;
+}
+.leaflet-marker-shadow{
+    margin-left: -4px !important;
+    margin-top: -15px !important;
+    width: 18px !important;
+    height: 15px !important;
+}
+.tooltipdisaster{
+    background: transparent !important;
+    color: #e70331 !important;
+    border: 0px solid;
+    border-radius: 0px;
+    padding: 0px;
+    box-shadow: none;
+}
+.maplabelbox{
+    position: absolute;
+    z-index: 500;
+    left: 46.5vw;
+    bottom: 9vh;
+    min-height: 30px;
+}
+.buttonmap{
+    margin-top: 0.5rem;
+}
+.btnmap{
+    background: #86BBD8;
+    border-radius: 0px;
+    box-shadow: none;
+    padding: 0px 5px;
+    font-size: 0.8rem;
+    border: none;
+    cursor: pointer;
+}
+.btnmap:hover{
+    background: #d0e8ff ;
+}
+.btnmap.active{
+    background: #d0e8ff;
+}
+.maplabel{
+    background: transparent;
+    color: #32BEF2;
+    border: 0px;
+    box-shadow: none;
+    opacity: 1;
+    border-bottom: 1px solid;
+    border-radius: 0;
+    padding-bottom: 3px;
+    font-size: 0.8rem;
+    text-align: center;
+}
+.leaflet-tooltip-bottom:before{
+    border-bottom-color: rgba(255, 255, 255, 0.56) !important;
+    display: none;
+}
+
+.leaflet-grid-label .lng {
+    margin-left: 8px;
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    font-size: 0.5rem;
+}
+
+.leaflet-grid-label .lat, 
+.leaflet-grid-label .lng {
+    display: none;
+}
+/*LEAFLET*/
+.leaflet-control-zoom-in, .leaflet-control-zoom-out {
+     text-indent: 0px; 
+    font-size: 0.9rem !important;
+}
+.leaflet-touch .leaflet-bar a {
+    color: rgb(255, 255, 255);
+    width: 1.3rem;
+    height: 1.5rem;
+    line-height: 20px;
+    background: #e70022;
+    border: none;
+}
+.leaflet-control-zoom{
+    position: absolute;
+    z-index: 600;
+    top: 45vh;
+    right: 0rem;
+}
+.leaflet-control-zoom-in{
+    margin-bottom: 0.2rem;
+}
+.leaflet-popup-content {
+    margin: 0;
+    width: 100% !important;
+}
+
+
+#tooltip{
+    width: max-content;
+    min-height: 20px;
+    position: absolute;
+    z-index: 500;
+    background: rgba(0,0,0,.7);
+    border-radius: 2px;
+    padding: 4px 10px;
+    display: none;
+    color: #fff;
+    top: 400px;
+    left: 500px;
+    font-size: 0.8rem;
+}
+.thepolyline{
+    stroke-width: 1px;
+    opacity: 0.3;
+    stroke: #9e9e9e;
+}
+.blockslider{
+    position: absolute;
+    bottom: 0px;
+    width: 100vw;
+    z-index: 500;
+    height: 7vh;
+    padding: 1rem;
+    /*background: #949494;*/
+
+}
+.boxtheslider{
+
+}
+#theslider{
+    background: rgba(68, 68, 68, 0.8);
+    height: 0.4rem;
+    border: 0px solid;
+}
+.ui-slider-handle{
+    width: 0.8rem !important;
+    background: rgba(68, 68, 68, 0.8) !important;
+    border: 0px solid !important;
+    margin-left: -.3em !important;
+    height: 1rem !important;
+}
+.ui-slider-pips .ui-slider-pip{
+    font-size: 0.7vw !important;
+    color: rgba(68, 68, 68, 0.8) !important;
+}
+#playstop{
+    font-size: 2rem;
+    margin-top: -0.5rem;
+    color: rgba(68, 68, 68, 0.8);
+    cursor: pointer;
+}
+#playstop:hover{
+    color: rgba(68, 68, 68, 1);
+}
+.buttonplaypause{
+    padding-top: 0.2rem;
+    text-align: right;
+}
+
+
+
+
+.ui-slider-pip-label{
+    top: 14px !important;
+}
+
+.blockimage{
+    position: absolute;
+    z-index: 500;
+    top: 5vh;
+    left:4rem;
+}
+.blockimage img{
+    height: 200px;
+}
+
+.nationalgeojson{
+    pointer-events: none !important;
+}
+.maptext > table{
+    width: 100%;
+    margin-bottom: 3px;
+}
+.maptext{
+    width: 23%;
+    position: absolute;
+    z-index: 500;
+    top: 40vh;
+    left: 4rem;
+}
+.maptext td{
+    color: #859da9;
+    font-size: 0.7rem;
+}
+
+#disasterselect{
+    color: #fff;
+    background: transparent;
+    border-radius: 0px;
+    font-weight: normal;
+    padding: 0px;
+}
+
+
+
+
+
+
