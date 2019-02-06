@@ -296,21 +296,21 @@ h5{
     left:4rem;
 }
 .blockimage img{
-    height: 200px;
+    height: 180px;
 }
 
 .nationalgeojson{
     pointer-events: none !important;
 }
 .maptext > table{
-    width: 75%;
+    width: 80%;
     margin-bottom: 3px;
 }
 .maptext{
     width: 23%;
     position: absolute;
     z-index: 500;
-    top: 43vh;
+    top: 50vh;
     left: 4rem;
 }
 .maptext td{
